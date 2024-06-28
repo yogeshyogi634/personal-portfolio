@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/josefin-sans.woff2") format("woff2"),
+    url("../fonts/josefin-sans.woff") format("woff");
+  /* Add additional formats if available */
+  font-weight: normal;
+  font-style: normal;
+}
