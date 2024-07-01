@@ -139,6 +139,12 @@ const AboutPage = () => {
                 Next.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                HTML
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                CSS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 SCSS
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
@@ -147,7 +153,6 @@ const AboutPage = () => {
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 MongoDB
               </div>
-
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Node.js
               </div>
@@ -161,19 +166,13 @@ const AboutPage = () => {
                 Framer Motion
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Three.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Webpack
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Vite
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Git
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Figma
+                Github
               </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
@@ -225,13 +224,13 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="w-fit bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Associate Member of Technical Staff
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.
+                    I spearheaded the development of React-based applications,
+                    leveraging my advanced skills as a full-stack developer.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -268,7 +267,7 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="w-fit bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Internship
                   </div>
                   {/* JOB DESC */}

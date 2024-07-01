@@ -11,7 +11,7 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Gaian Solutions Website",
     desc: "Developed a marketing website for Gaian Solutions using React.js and Tailwind CSS for a responsive and modern UI. Integrated Firebase for backend services and SAAS for scalable solutions, and used Email.js for seamless email communication. Utilized Framer Motion for engaging animations and incorporated React Leaflet for interactive map features",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "https://images.pexels.com/photos/6330644/pexels-photo-6330644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     link: "https://gaiansolutions.com",
   },
   {
@@ -19,7 +19,8 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Mobius Marketing Website",
     desc: "Developed a marketing website for Mobius using ReactJS and CSS for a dynamic and responsive design. The site uses Firebase for real-time data and authentication, EmailJS for email communication, and React Leaflet for interactive maps.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+
+    img: "https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     // img: "/brand-new-logo.png",
     link: "https://mobiusdtaas.ai/",
   },
@@ -28,26 +29,9 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "Nexus Connect Website",
     desc: "Developed a marketing website for Nexus Connects using ReactJS and CSS for a dynamic, responsive design. Integrated Firebase for real-time data handling and secure user authentication, and used EmailJS for seamless email communication. Implemented React Leaflet for interactive map features, enhancing user engagement.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "https://images.pexels.com/photos/1181371/pexels-photo-1181371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     link: "https://nexusconnects.ai/",
   },
-  // {
-  //   id: 3,
-  //   color: "from-violet-300 to-purple-300",
-  //   title: "The Platform Academy Website",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  //   img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  //   link: "https://tpaedu.org/",
-  // },
-
-  // {
-  //   id: 4,
-  //   color: "from-purple-300 to-red-300",
-  //   title: "Spotify Music App",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  //   img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   link: "https://lama.dev",
-  // },
 ];
 
 function PortfolioPage() {
@@ -68,7 +52,6 @@ function PortfolioPage() {
           <div>My Works</div>
           <div>
             {/* BIOGRAPHY SCROLL SVG */}
-
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -114,7 +97,12 @@ function PortfolioPage() {
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[420px] ">
-                    <Image src={item.img} alt="image" fill />
+                    <Image
+                      src={item.img}
+                      alt="image"
+                      fill
+                      className="rounded-lg"
+                    />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px] text-justify">
                     {item.desc}

@@ -71,7 +71,7 @@ function Navbar() {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
       <div className="hidden md:flex gap-8 w-1/3 ">
         {/* LINKS */}
         {links.map((link) => (
