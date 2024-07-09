@@ -7,6 +7,13 @@ import SwiperSlide from "@/components/appSwiper/appSwiper";
 import SwiperSlider from "@/components/appSwiper/appSwiper";
 
 function ContactPage() {
+  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
+  // Example usage
+  console.log(SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
+
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const text = "Say Hello!";
@@ -20,10 +27,10 @@ function ContactPage() {
 
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        process.env.SERVICE_ID,
+        process.TEMPLATE_ID,
         form.current,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
+        process.PUBLIC_KEY
       )
       .then(
         () => {
@@ -31,6 +38,7 @@ function ContactPage() {
           form.current.reset();
         },
         () => {
+          console.error("EmailJS error: ", error);
           setError(true);
         }
       );
@@ -57,7 +65,7 @@ function ContactPage() {
                   delay: index * 0.1,
                 }}
               >
-                {letter}{" "}
+                {letter}
               </motion.span>
             ))}
             👋
@@ -67,15 +75,15 @@ function ContactPage() {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-[60%] lg:h-[85vh] lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-[60%] lg:h-[85vh] lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-10"
         >
-          <span>Your Message:</span>
+          {/* <span>Your Message:</span>
           <textarea
-            rows={4}
+            rows={2}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
             required
-          />
+          /> */}
           <span>Email:</span>
           <input
             name="user_email"
