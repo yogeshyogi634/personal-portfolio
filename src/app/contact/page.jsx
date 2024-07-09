@@ -65,7 +65,7 @@ function ContactPage() {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pb-10">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
         {/* TEXT CONTAINER */}
         <div className="h-[30%] lg:h-full lg:w-1/2 flex justify-center items-center text-4xl">
           <div>
